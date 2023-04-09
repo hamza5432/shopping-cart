@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    z-index: 1;
+    min-height: 100vh;
+    padding: 20px;
+    background: #fff;
+    box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title {
+    font-size: 10px;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity input {
+    border: 1px solid gray;
+    font-size: 10px;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    border-top: 1px solid black;
+}
+
+.total-title {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 5px;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 15px auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: rgb(221, 75, 75);
+}
+
+#close-cart {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+.logo {
+    font-size: 20px;
+    color: #E7E6E2;
+    font-weight: 400;
+}
+
+#cart-icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+}
+
+
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    
+}
+
+
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    position: relative;
+}
+
+.btn:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #777;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 100px;
+}
+
+
+    
+    .btn::after{
+        content: "";
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+        position: absolute;
+        border-radius: 100px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+}
+
+.btn-white::after{
+    background-color: #fff;
+}
+
+.btn:hover::after{
+    opacity: 0;
+}
+
+section {
+    padding: 40px 0 30px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.shop {
+    margin-top: 20px;
+}
+
+.shop-contect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 20px;
+}
+
+.product-box {
+    position: relative;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.price {
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+#add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#add-cart {
+    background: hsl(249, 32%, 17%);
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
